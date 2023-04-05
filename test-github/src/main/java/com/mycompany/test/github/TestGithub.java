@@ -14,10 +14,12 @@ import java.util.Scanner;
 
 public class TestGithub{
      
+  private static Scanner input = new Scanner(System.in);  
+     
     public static  int checkint() {
-        
+     System.out.println("enter the number of the  numbers need to inserts to add: "); 
       int x; 
-      Scanner input = new Scanner(System.in); 
+       
       
       try { 
             x = input.nextInt(); 
@@ -29,23 +31,40 @@ public class TestGithub{
        return x; 
      }
      
+    public static int numberofNumbers() { 
+        System.out.println("enter the number of the  numbers need to inserts: "); 
+        int num = -1; 
+  
+        try { 
+               num = input.nextInt();  
+               return num;
+        }catch(Exception e) { 
+            System.out.println("only numbers please!!!");
+            numberofNumbers();
+        }
+        
+        return num;
+    }
     
+    
+    public static int getSum() { 
+         int[]arr = new int[numberofNumbers()]; 
+         int sum = 0; 
+         int i = -1;
+         for( ; ++i < arr.length; ) { 
+             arr[i] = checkint();
+             sum += arr[i]; 
+         }
+        
+        return sum;
+    }
+    
+     
     public static void main(String[] args) {
         System.out.println("Hello World!");
-         Scanner input = new Scanner(System.in); 
+         getSum();
          
-         int arr[] = new int[5];
-         int i =0;
-         while(i < 5) { 
-             System.out.println("please enter the  number: ");
-              
-            
-              
-             arr[i] =  checkint();
-              
-             i++; 
-             
-         }
+        
          
          
     }
