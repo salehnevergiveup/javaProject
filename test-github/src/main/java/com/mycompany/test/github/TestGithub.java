@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class TestGithub{
      
   private static Scanner input = new Scanner(System.in);  
-     
+     // this to get the  number of the  numbers 
     public static  int checkint() {
      System.out.println("enter the number of the  numbers need to inserts to add: "); 
       int x; 
@@ -30,7 +30,7 @@ public class TestGithub{
       }
        return x; 
      }
-     
+     // this for varifying the  number
     public static int numberofNumbers() { 
         System.out.println("enter the number of the  numbers need to inserts: "); 
         int num = -1; 
@@ -46,7 +46,7 @@ public class TestGithub{
         return num;
     }
     
-    
+    // this is for getting the  sum 
     public static int getSum() { 
          int[]arr = new int[numberofNumbers()]; 
          int sum = 0; 
