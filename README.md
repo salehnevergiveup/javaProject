@@ -5,8 +5,8 @@
 >1. Right-click on the hosts file.
 >2. From the context menu, select "Open with VSCode".
 >3. If a notification prompts you to run VSCode as an administrator.
->3a. Click on the 'as admin' button.
->3b. Then, click on the "Yes" button on the user Account Control.
->4. Add the provided code to the hosts file.
->5. Save the changes.
->6. after that your changes to the hosts file should be saved successfully.
+>4. Click on the 'as admin' button.
+>5. Then, click on the "Yes" button on the user Account Control.
+>6. Add the provided code to the hosts file.
+>7. Save the changes.
+>8. after that your changes to the hosts file should be saved successfully.
